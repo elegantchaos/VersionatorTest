@@ -22,6 +22,9 @@ let package = Package(
         .executableTarget(
             name: "VersionatorTest",
             dependencies: [],
+            resources: [
+                .copy("Resources/")
+            ],
             plugins: [
                 .plugin(name: "VersionatorPlugin", package: "Versionator")
             ]
