@@ -10,4 +10,4 @@ to build & run this executable.
 
 Doing so should fetch, build & run the plugin as part of the build process.
 
-
+See https://github.com/elegantchaos/Versionator for the plugin itself.
