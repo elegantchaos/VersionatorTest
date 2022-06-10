@@ -6,8 +6,6 @@
 
 @main struct VersionatorTest {
     static func main() {
-        print("Hello World")
-        print(CurrentVersion.text)
-//        print(Test().text)
+        print("Current build is \(CurrentVersion.text)")
     }
 }
