@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "versionator",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elegantchaos/Versionator.git",
+      "state" : {
+        "revision" : "4eb125fdb93303d1d15f585315b6fd70df4b85df",
+        "version" : "0.1.0"
+      }
+    },
+    {
       "identity" : "xctestextensions",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/elegantchaos/XCTestExtensions.git",

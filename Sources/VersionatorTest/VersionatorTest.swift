@@ -9,6 +9,7 @@ import Foundation
     static func main() {
         print("Current build is \(CurrentVersion.build)")
         print("Current commit is \(CurrentVersion.commit)")
+        print("Git describe is \(CurrentVersion.git)")
 
         if let url = Bundle.module.url(forResource: "Info", withExtension: "plist") {
             print(url)

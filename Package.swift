@@ -1,5 +1,12 @@
 // swift-tools-version: 5.7
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+//  Created by Sam Deane on 10/06/22.
+//  All code (c) 2022 - present day, Elegant Chaos Limited.
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+/// Test package which uses the Versionator plugin to embed a version
+/// number into the executable in a way that's accessible at runtime.
 
 import PackageDescription
 
@@ -9,14 +16,12 @@ let package = Package(
         .macOS(.v10_13)
     ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .executable(
             name: "VersionatorTest",
             targets: ["VersionatorTest"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(path: "../Versionator"),
+        .package(url: "https://github.com/elegantchaos/Versionator.git", from: "0.1.0"),
     ],
     targets: [
         .executableTarget(
