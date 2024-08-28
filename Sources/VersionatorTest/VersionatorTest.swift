@@ -6,14 +6,14 @@
 import Foundation
 
 @main struct VersionatorTest {
-    static func main() {
-        print("Current build is \(CurrentVersion.build)")
-        print("Current commit is \(CurrentVersion.commit)")
-        print("Git describe is \(CurrentVersion.git)")
+  static func main() {
+    print("Current build is \(CurrentVersion.build)")
+    print("Current commit is \(CurrentVersion.commit)")
+    print("Git describe is \(CurrentVersion.git)")
 
-        if let info = Bundle.module.infoDictionary {
-            print("\nInfo Dictionary is:")
-            print(info)
-        }
+    if let info = Bundle.module.infoDictionary {
+      print("\nInfo Dictionary is:")
+      print(info)
     }
+  }
 }
