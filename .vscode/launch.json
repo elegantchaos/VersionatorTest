@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:VersionatorTest}",
+      "name": "Debug VersionatorTest",
+      "program": "${workspaceFolder:VersionatorTest}/.build/debug/VersionatorTest",
+      "preLaunchTask": "swift: Build Debug VersionatorTest"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:VersionatorTest}",
+      "name": "Release VersionatorTest",
+      "program": "${workspaceFolder:VersionatorTest}/.build/release/VersionatorTest",
+      "preLaunchTask": "swift: Build Release VersionatorTest"
+    }
+  ]
+}
