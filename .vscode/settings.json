@@ -4,4 +4,6 @@
   "swift.debugger.useDebugAdapterFromToolchain": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
+  "swift.backgroundCompilation": true,
+  "swift.sourcekit-lsp.backgroundIndexing": true,
 }
