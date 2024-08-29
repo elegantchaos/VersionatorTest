@@ -18,10 +18,13 @@ let package = Package(
   products: [
     .executable(
       name: "VersionatorTest",
-      targets: ["VersionatorTest"])
+      targets: ["VersionatorTest"]),
+    .executable(
+      name: "VersionatorTestWithResources",
+      targets: ["VersionatorTestWithResources"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/elegantchaos/Versionator.git", branch: "main")
+    .package(url: "https://github.com/elegantchaos/Versionator.git", from: "2.0.2")
   ],
   targets: [
     .executableTarget(
@@ -30,6 +33,17 @@ let package = Package(
       plugins: [
         .plugin(name: "VersionatorPlugin", package: "Versionator")
       ]
-    )
+    ),
+    .executableTarget(
+      name: "VersionatorTestWithResources",
+      dependencies: [],
+      resources: [
+        .copy("Resources/Something.txt")
+      ],
+      plugins: [
+        .plugin(name: "VersionatorPlugin", package: "Versionator")
+      ]
+    ),
+
   ]
 )

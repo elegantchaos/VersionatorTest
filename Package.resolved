@@ -1,5 +1,5 @@
 {
-  "originHash" : "d32609dfaf6c0e84a659c53e6afc72f738d09afb2979736c58d8a8b50b085866",
+  "originHash" : "19f3760021a4eef6ecb76fd6e0dddd46a1bfe925528ab0cc5ecc337051f4c8bb",
   "pins" : [
     {
       "identity" : "runner",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/elegantchaos/Versionator.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "c9d23eff61880741a13919cf2fa9ccd21025153a"
+        "revision" : "6d1cdddce7990f660c4f3b96c5a24be8dcce9007",
+        "version" : "2.0.2"
       }
     }
   ],
