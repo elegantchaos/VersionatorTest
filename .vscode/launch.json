@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "type": "lldb",
+      "type": "swift-lldb",
       "request": "launch",
       "sourceLanguages": [
         "swift"
@@ -13,7 +13,7 @@
       "preLaunchTask": "swift: Build Debug VersionatorTest"
     },
     {
-      "type": "lldb",
+      "type": "swift-lldb",
       "request": "launch",
       "sourceLanguages": [
         "swift"
@@ -23,6 +23,30 @@
       "name": "Release VersionatorTest",
       "program": "${workspaceFolder:VersionatorTest}/.build/release/VersionatorTest",
       "preLaunchTask": "swift: Build Release VersionatorTest"
+    },
+    {
+      "type": "swift-lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:VersionatorTest}",
+      "name": "Debug VersionatorTestWithResources",
+      "program": "${workspaceFolder:VersionatorTest}/.build/debug/VersionatorTestWithResources",
+      "preLaunchTask": "swift: Build Debug VersionatorTestWithResources"
+    },
+    {
+      "type": "swift-lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:VersionatorTest}",
+      "name": "Release VersionatorTestWithResources",
+      "program": "${workspaceFolder:VersionatorTest}/.build/release/VersionatorTestWithResources",
+      "preLaunchTask": "swift: Build Release VersionatorTestWithResources"
     }
   ]
 }
